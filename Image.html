@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="../src//assets/img1.jpeg" id="fullImg">
+        <span onclick="closeFullimg()">X</span>
+    </div>
+
+    <div class="image-gallery">
+        <img src="./assets/img1.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img2.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img3.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img4.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img5.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img6.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img7.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img8.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img9.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img10.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img11.jpeg" alt="" onclick="openFullImg(this.src)">
+        <img src="./assets/img12.jpeg" alt="" onclick="openFullImg(this.src)">
+
+    </div>
+
+
+    <script>
+
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+
+        function closeFullimg() {
+            fullImgBox.style.display = "none";
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
